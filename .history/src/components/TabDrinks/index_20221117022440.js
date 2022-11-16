@@ -4,7 +4,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { Container, Grid } from "@mui/material";
+import { Container } from "@mui/material";
 import ProductItem from "../ProductItem";
 
 function TabPanel(props) {
@@ -129,25 +129,13 @@ export default function TabDrinks() {
 
   return (
     <Container>
-      <Box
-        sx={{
-          maxWidth: { xs: 400, sm: 480, md: "100%" },
-          bgcolor: "background.paper",
-        }}
-      >
-        <Box
-          sx={{ borderBottom: 1, borderColor: "divider" }}
-          display="flex"
-          justifyContent="center"
-        >
+      <Box sx={{ width: "100%" }}>
+        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <Tabs
             value={value}
             onChange={handleChange}
+            aria-label="basic tabs example"
             centered
-            variant="scrollable"
-            scrollButtons
-            allowScrollButtonsMobile
-            aria-label="scrollable force tabs example"
           >
             <Tab label="Tất cả thức uống" {...a11yProps(0)} />
             <Tab label="Cà Phê Việt Nam" {...a11yProps(1)} />
@@ -157,11 +145,9 @@ export default function TabDrinks() {
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
-          <Grid container>
-            {Drinks.map((item) => (
-              <ProductItem key={item.id} name={item.name} image={item.image} />
-            ))}
-          </Grid>
+          {Drinks.map((item) => (
+            <ProductItem key={item.id} name={item.name} image={item.image} />
+          ))}
         </TabPanel>
         <TabPanel value={value} index={1}>
           Item Two

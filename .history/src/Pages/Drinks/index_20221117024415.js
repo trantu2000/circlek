@@ -7,7 +7,6 @@ const ImageSlideDrinkPage = styled("img")(({ src, theme }) => ({
   src: `url(${src})`,
   width: "100%",
   height: "100%",
-  
   // background: Colors.light_gray,
 }));
 
@@ -28,7 +27,7 @@ const Drinks = () => {
         <Box sx={{ width: "20rem" }}>
           <Typography
             variant="subtitle1"
-            style={{ color: "#fff", fontSize: 14 }}
+            style={{  color: "#fff" }}
           >
             Circle K luôn "thỏa cơn khát" của bạn 24/7 với đa dạng các loại thức
             uống từ nóng đến lạnh. Đặc biệt, bạn có thể cùng bạn bè thỏa sức
@@ -39,7 +38,7 @@ const Drinks = () => {
         </Box>
       </Box>
       <Box>
-        <TabDrinks />
+        <TabDrinks/>
       </Box>
     </Box>
   );

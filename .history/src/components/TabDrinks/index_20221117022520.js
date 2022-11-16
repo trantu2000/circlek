@@ -129,25 +129,13 @@ export default function TabDrinks() {
 
   return (
     <Container>
-      <Box
-        sx={{
-          maxWidth: { xs: 400, sm: 480, md: "100%" },
-          bgcolor: "background.paper",
-        }}
-      >
-        <Box
-          sx={{ borderBottom: 1, borderColor: "divider" }}
-          display="flex"
-          justifyContent="center"
-        >
+      <Box sx={{ width: "100%" }}>
+        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <Tabs
             value={value}
             onChange={handleChange}
+            aria-label="basic tabs example"
             centered
-            variant="scrollable"
-            scrollButtons
-            allowScrollButtonsMobile
-            aria-label="scrollable force tabs example"
           >
             <Tab label="Tất cả thức uống" {...a11yProps(0)} />
             <Tab label="Cà Phê Việt Nam" {...a11yProps(1)} />

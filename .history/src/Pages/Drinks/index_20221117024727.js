@@ -7,7 +7,9 @@ const ImageSlideDrinkPage = styled("img")(({ src, theme }) => ({
   src: `url(${src})`,
   width: "100%",
   height: "100%",
-  
+  "&:hover": {
+    mb: 2,
+  },
   // background: Colors.light_gray,
 }));
 

@@ -129,17 +129,8 @@ export default function TabDrinks() {
 
   return (
     <Container>
-      <Box
-        sx={{
-          maxWidth: { xs: 400, sm: 480, md: "100%" },
-          bgcolor: "background.paper",
-        }}
-      >
-        <Box
-          sx={{ borderBottom: 1, borderColor: "divider" }}
-          display="flex"
-          justifyContent="center"
-        >
+      <Box sx={{ width: "100%" }}>
+        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <Tabs
             value={value}
             onChange={handleChange}
