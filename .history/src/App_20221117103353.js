@@ -4,7 +4,6 @@ import Drinks from "./Pages/Drinks";
 import Home from "./Pages/Home";
 import { Routes, Route} from "react-router-dom";
 import Footer from "./components/Footer";
-import Foods from "./Pages/Foods";
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/drinks" element={<Drinks />} />
-        <Route path="/foods" element={<Foods />} />
       </Routes>
       <Footer/>
     </>

@@ -15,7 +15,7 @@ const ImageSlideDrinkPage = styled("img")(({ src, theme }) => ({
 const Drinks = () => {
   return (
     <>
-      <MetaData title="Đồ uống " />
+      <MetaData title="Thức ăn" />
       <Box sx={{ width: "100%", height: "100%", mt: 1 }}>
         <ImageSlideDrinkPage src="https://res.cloudinary.com/da5zt66t6/image/upload/v1668622925/ciclek/drink_slide_pqdrfx.png" />
         <Box

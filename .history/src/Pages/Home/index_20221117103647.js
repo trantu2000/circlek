@@ -6,7 +6,7 @@ import SlideSwiper from "../../components/SlideSwiper";
 const Home = () => {
   return (
     <>
-      <MetaData title="Trang chủ " />
+      <MetaData title="" />
       <Box sx={{ mt: 2 }}>
         <SlideSwiper />
       </Box>

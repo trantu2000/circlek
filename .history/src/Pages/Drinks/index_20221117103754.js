@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import MetaData from "../../components/MetaData";
 import TabDrinks from "../../components/TabDrinks";
 
 const ImageSlideDrinkPage = styled("img")(({ src, theme }) => ({

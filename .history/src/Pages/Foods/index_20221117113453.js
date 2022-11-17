@@ -12,32 +12,30 @@ const ImageSlideDrinkPage = styled("img")(({ src, theme }) => ({
   // background: Colors.light_gray,
 }));
 
-const Drinks = () => {
+const Foods = () => {
   return (
     <>
-      <MetaData title="Đồ uống " />
+      <MetaData title="Thức ăn" />
       <Box sx={{ width: "100%", height: "100%", mt: 1 }}>
         <ImageSlideDrinkPage src="https://res.cloudinary.com/da5zt66t6/image/upload/v1668622925/ciclek/drink_slide_pqdrfx.png" />
         <Box
           sx={{
             position: "absolute",
-            top: 118,
+            top: 130,
             left: "22.5rem",
           }}
         >
           <Typography variant="h5" style={{ fontWeight: 900, color: "#fff" }}>
-            THỨC UỐNG
+            Đồ ăn
           </Typography>
           <Box sx={{ width: "20rem" }}>
             <Typography
               variant="subtitle1"
               style={{ color: "#fff", fontSize: 14 }}
             >
-              Circle K luôn "thỏa cơn khát" của bạn 24/7 với đa dạng các loại
-              thức uống từ nóng đến lạnh. Đặc biệt, bạn có thể cùng bạn bè thỏa
-              sức sáng tạo thức uống của mình bằng cách tự pha trộn và kết hợp
-              các hương vị có sẵn. Circle K luôn có thức uống mới để bạn thưởng
-              thức và trải nghiệm.
+              Với cam kết "Tươi và Ngon" cùng các lựa chọn phong phú từ món ăn
+              quốc tế quen thuộc đến món ăn địa phương và thức ăn đường phố phổ
+              biến, Circle K luôn mang đến cho bạn sự hài lòng như mong muốn.
             </Typography>
           </Box>
         </Box>
@@ -49,4 +47,4 @@ const Drinks = () => {
   );
 };
 
-export default Drinks;
+export default Foods;
