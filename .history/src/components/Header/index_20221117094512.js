@@ -12,36 +12,8 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { LogoImageNavbar } from "./styles";
-import { Link } from "react-router-dom";
 
-const navBars = [
-  {
-    id: 0,
-    page: "Thức ăn",
-    link: "/foods",
-  },
-  {
-    id: 1,
-    page: "Đồ uống",
-    link: "/drinks",
-  },
-  {
-    id: 2,
-    page: "Sản phẩm",
-    link: "/household-products",
-  },
-  {
-    id: 3,
-    page: "Dịch vụ",
-    link: "/service",
-  },
-  {
-    id: 4,
-    page: "Ưu đãi đặc biệt",
-    link: "/special-offer",
-  },
-];
-const pages = ["Thức ăn", "Đồ uống", "Sản phẩm", "Dịch vụ", "Ưu đãi đặc biệt"];
+const pages = ["Thức ăn" ,"Đồ uống", "Sản phẩm" , "Dịch vụ", "Ưu đãi đặc biệt"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Header() {
@@ -84,22 +56,20 @@ function Header() {
               textDecoration: "none",
             }}
           ></Typography> */}
-            <Link to="/">
-              <Box
-                sx={{
-                  display: {
-                    xs: "none",
-                    md: "flex",
-                    width: "6rem",
-                    height: "2.5rem",
-                  },
-                }}
-                justifyContent="center"
-                alignItems="center"
-              >
-                <LogoImageNavbar src="https://res.cloudinary.com/da5zt66t6/image/upload/v1668615460/ciclek/logo-navbar_v3gus3.png" />
-              </Box>
-            </Link>
+            <Box
+              sx={{
+                display: {
+                  xs: "none",
+                  md: "flex",
+                  width: "6rem",
+                  height: "2.5rem",
+                },
+              }}
+              justifyContent="center"
+              alignItems="center"
+            >
+              <LogoImageNavbar src="https://res.cloudinary.com/da5zt66t6/image/upload/v1668615460/ciclek/logo-navbar_v3gus3.png" />
+            </Box>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
@@ -153,16 +123,14 @@ function Header() {
             </Box>
             <Box sx={{ flexGrow: 2, display: { xs: "none", md: "flex" } }} />
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              {navBars.map((item) => (
-                <Link to={item.link} style={{ textDecoration: "none" }}>
-                  <Button
-                    key={item.id}
-                    onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white", display: "block" }}
-                  >
-                    {item.page}
-                  </Button>
-                </Link>
+              {pages.map((page) => (
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  {page}
+                </Button>
               ))}
             </Box>
 

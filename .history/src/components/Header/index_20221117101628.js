@@ -84,7 +84,7 @@ function Header() {
               textDecoration: "none",
             }}
           ></Typography> */}
-            <Link to="/">
+            <Link>
               <Box
                 sx={{
                   display: {
