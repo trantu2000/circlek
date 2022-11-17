@@ -7,7 +7,6 @@ import { Container, Grid } from "@mui/material";
 import ProductItem from "../ProductItem";
 import { Foods } from "../../Data";
 import { TabPanel } from "../TabPanel";
-import _ from "lodash";
 
 TabPanel.propTypes = {
   children: PropTypes.node,
@@ -70,60 +69,28 @@ export default function TabFoods() {
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <Grid container>
-            {_.filter(Foods, (e) => e.category === "thức ăn đóng hộp")?.map((item) => (
-              <ProductItem key={item.id} name={item.name} image={item.image} />
-            ))}
-          </Grid>
+          Item Two
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <Grid container>
-            {_.filter(Foods, (e) => e.category === "mì")?.map((item) => (
-              <ProductItem key={item.id} name={item.name} image={item.image} />
-            ))}
-          </Grid>
+          Item Three
         </TabPanel>
         <TabPanel value={value} index={3}>
-          <Grid container>
-            {_.filter(Foods, (e) => e.category === "bánh mì")?.map((item) => (
-              <ProductItem key={item.id} name={item.name} image={item.image} />
-            ))}
-          </Grid>
+          Item Three
         </TabPanel>
         <TabPanel value={value} index={4}>
-          <Grid container>
-            {_.filter(Foods, (e) => e.category === "xúc xích nướng")?.map((item) => (
-              <ProductItem key={item.id} name={item.name} image={item.image} />
-            ))}
-          </Grid>
+          Item Three
         </TabPanel>
         <TabPanel value={value} index={5}>
-          <Grid container>
-            {_.filter(Foods, (e) => e.category === "bánh bao/bánh giò")?.map((item) => (
-              <ProductItem key={item.id} name={item.name} image={item.image} />
-            ))}
-          </Grid>
+          Item Three
         </TabPanel>
         <TabPanel value={value} index={6}>
-          <Grid container>
-            {_.filter(Foods, (e) => e.category === "cơm nắm")?.map((item) => (
-              <ProductItem key={item.id} name={item.name} image={item.image} />
-            ))}
-          </Grid>
+          Item Three
         </TabPanel>
         <TabPanel value={value} index={7}>
-          <Grid container>
-            {_.filter(Foods, (e) => e.category === "tráng miệng")?.map((item) => (
-              <ProductItem key={item.id} name={item.name} image={item.image} />
-            ))}
-          </Grid>
+          Item Three
         </TabPanel>
         <TabPanel value={value} index={8}>
-          <Grid container>
-            {_.filter(Foods, (e) => e.category === "bánh tươi")?.map((item) => (
-              <ProductItem key={item.id} name={item.name} image={item.image} />
-            ))}
-          </Grid>
+          Item Three
         </TabPanel>
       </Box>
     </Container>

@@ -15,7 +15,7 @@ const ProductItem = ({ image, name }) => {
       <Box
         textAlign="center"
         sx={{
-          width: "200",
+          width: 170,
           height: 200,
           p: 5,
           borderRadius: 5,

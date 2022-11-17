@@ -11,19 +11,21 @@ const ImageProductItem = styled("img")(({ src, theme }) => ({
 
 const ProductItem = ({ image, name }) => {
   return (
-    <Grid md={3} sm={6} xs={12}>
+    <Grid md={3}>
       <Box
         textAlign="center"
         sx={{
-          width: "200",
+          width: 170,
           height: 200,
           p: 5,
           borderRadius: 5,
-          mt: 3,
+          mt:3,
           "&:hover": {
             backgroundColor: "#d6d6c2",
           },
+          backgroundColor: "#d6d6c2",
         }}
+        
       >
         <ImageProductItem src={image} />
         <Typography

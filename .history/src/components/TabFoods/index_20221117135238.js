@@ -92,35 +92,35 @@ export default function TabFoods() {
         </TabPanel>
         <TabPanel value={value} index={4}>
           <Grid container>
-            {_.filter(Foods, (e) => e.category === "xúc xích nướng")?.map((item) => (
+            {_.filter(Foods, (e) => e.category === "trà sữa")?.map((item) => (
               <ProductItem key={item.id} name={item.name} image={item.image} />
             ))}
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={5}>
           <Grid container>
-            {_.filter(Foods, (e) => e.category === "bánh bao/bánh giò")?.map((item) => (
+            {_.filter(Foods, (e) => e.category === "trà sữa")?.map((item) => (
               <ProductItem key={item.id} name={item.name} image={item.image} />
             ))}
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={6}>
           <Grid container>
-            {_.filter(Foods, (e) => e.category === "cơm nắm")?.map((item) => (
+            {_.filter(Foods, (e) => e.category === "trà sữa")?.map((item) => (
               <ProductItem key={item.id} name={item.name} image={item.image} />
             ))}
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={7}>
           <Grid container>
-            {_.filter(Foods, (e) => e.category === "tráng miệng")?.map((item) => (
+            {_.filter(Foods, (e) => e.category === "trà sữa")?.map((item) => (
               <ProductItem key={item.id} name={item.name} image={item.image} />
             ))}
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={8}>
           <Grid container>
-            {_.filter(Foods, (e) => e.category === "bánh tươi")?.map((item) => (
+            {_.filter(Foods, (e) => e.category === "trà sữa")?.map((item) => (
               <ProductItem key={item.id} name={item.name} image={item.image} />
             ))}
           </Grid>

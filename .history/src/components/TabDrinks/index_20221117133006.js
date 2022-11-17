@@ -7,7 +7,6 @@ import { Container, Grid } from "@mui/material";
 import ProductItem from "../ProductItem";
 import { Drinks } from "../../Data";
 import { TabPanel } from "../TabPanel";
-import _ from "lodash";
 
 TabPanel.propTypes = {
   children: PropTypes.node,
@@ -21,6 +20,8 @@ function a11yProps(index) {
     "aria-controls": `simple-tabpanel-${index}`,
   };
 }
+
+
 
 export default function TabDrinks() {
   const [value, setValue] = React.useState(0);
@@ -66,44 +67,16 @@ export default function TabDrinks() {
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <Grid container>
-            {_.filter(Drinks, (e) => e.category === "cà phê việt nam")?.map(
-              (item) => (
-                <ProductItem
-                  key={item.id}
-                  name={item.name}
-                  image={item.image}
-                />
-              )
-            )}
-          </Grid>
+          Item Two
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <Grid container>
-            {_.filter(Drinks, (e) => e.category === "sản phẩm netslé")?.map(
-              (item) => (
-                <ProductItem
-                  key={item.id}
-                  name={item.name}
-                  image={item.image}
-                />
-              )
-            )}
-          </Grid>
+          Item Three
         </TabPanel>
         <TabPanel value={value} index={3}>
-          <Grid container>
-            {_.filter(Drinks, (e) => e.category === "trà sữa")?.map((item) => (
-              <ProductItem key={item.id} name={item.name} image={item.image} />
-            ))}
-          </Grid>
+          Item Three
         </TabPanel>
-        <TabPanel value={value} index={4}>
-          <Grid container>
-            {_.filter(Drinks, (e) => e.category === "thức uống pha chế")?.map((item) => (
-              <ProductItem key={item.id} name={item.name} image={item.image} />
-            ))}
-          </Grid>
+        <TabPanel value={value} index={3}>
+          Item Three
         </TabPanel>
       </Box>
     </Container>

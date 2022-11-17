@@ -16,7 +16,7 @@ const ProductItem = ({ image, name }) => {
         textAlign="center"
         sx={{
           width: "200",
-          height: 200,
+          height: 220,
           p: 5,
           borderRadius: 5,
           mt: 3,

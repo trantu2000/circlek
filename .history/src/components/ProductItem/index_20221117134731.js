@@ -11,11 +11,11 @@ const ImageProductItem = styled("img")(({ src, theme }) => ({
 
 const ProductItem = ({ image, name }) => {
   return (
-    <Grid md={3} sm={6} xs={12}>
+    <Grid md={12} sm={6} xs={13}>
       <Box
         textAlign="center"
         sx={{
-          width: "200",
+          width: 170,
           height: 200,
           p: 5,
           borderRadius: 5,

@@ -98,7 +98,7 @@ export default function TabDrinks() {
             ))}
           </Grid>
         </TabPanel>
-        <TabPanel value={value} index={4}>
+        <TabPanel value={value} index={3}>
           <Grid container>
             {_.filter(Drinks, (e) => e.category === "thức uống pha chế")?.map((item) => (
               <ProductItem key={item.id} name={item.name} image={item.image} />
